@@ -1,0 +1,337 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\Duy\\Documents\\MyProject\\ml_dotnet_NLCS\\TestML_NET\\Data\\dataset.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "MaToHop",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "DiemToHop",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "NhomTinhCach",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "NhomNganh",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.67945578231292525,
+        "RuntimeInSeconds": 0.278,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e8 * e12",
+          "e0": {
+            "OutputColumnNames": [
+              "DiemToHop"
+            ],
+            "InputColumnNames": [
+              "DiemToHop"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "MaToHop",
+            "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnName": "NhomTinhCach",
+            "OutputColumnName": "NhomTinhCach"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "DiemToHop",
+              "MaToHop",
+              "NhomTinhCach"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "OutputColumnName": "NhomNganh",
+            "InputColumnName": "NhomNganh",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.78957427,
+            "LabelColumnName": "NhomNganh",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.6651700680272109,
+        "RuntimeInSeconds": 0.289,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e8 * e12",
+          "e0": {
+            "OutputColumnNames": [
+              "DiemToHop"
+            ],
+            "InputColumnNames": [
+              "DiemToHop"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "MaToHop",
+            "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnName": "NhomTinhCach",
+            "OutputColumnName": "NhomTinhCach"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "DiemToHop",
+              "MaToHop",
+              "NhomTinhCach"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "OutputColumnName": "NhomNganh",
+            "InputColumnName": "NhomNganh",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.032545194,
+            "L2Regularization": 0.9644565,
+            "LabelColumnName": "NhomNganh",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.6651700680272109,
+        "RuntimeInSeconds": 0.296,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e8 * e12",
+          "e0": {
+            "OutputColumnNames": [
+              "DiemToHop"
+            ],
+            "InputColumnNames": [
+              "DiemToHop"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "MaToHop",
+            "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnName": "NhomTinhCach",
+            "OutputColumnName": "NhomTinhCach"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "DiemToHop",
+              "MaToHop",
+              "NhomTinhCach"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "OutputColumnName": "NhomNganh",
+            "InputColumnName": "NhomNganh",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.9254262,
+            "LabelColumnName": "NhomNganh",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.65088435374149667,
+        "RuntimeInSeconds": 0.377,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e8 * e12",
+          "e0": {
+            "OutputColumnNames": [
+              "DiemToHop"
+            ],
+            "InputColumnNames": [
+              "DiemToHop"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "MaToHop",
+            "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnName": "NhomTinhCach",
+            "OutputColumnName": "NhomTinhCach"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "DiemToHop",
+              "MaToHop",
+              "NhomTinhCach"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "OutputColumnName": "NhomNganh",
+            "InputColumnName": "NhomNganh",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.25686908,
+            "L2Regularization": 0.76124763,
+            "LabelColumnName": "NhomNganh",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.65088435374149667,
+        "RuntimeInSeconds": 0.365,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e8 * e12",
+          "e0": {
+            "OutputColumnNames": [
+              "DiemToHop"
+            ],
+            "InputColumnNames": [
+              "DiemToHop"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "MaToHop",
+            "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnName": "NhomTinhCach",
+            "OutputColumnName": "NhomTinhCach"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "DiemToHop",
+              "MaToHop",
+              "NhomTinhCach"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "OutputColumnName": "NhomNganh",
+            "InputColumnName": "NhomNganh",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.76684505,
+            "LabelColumnName": "NhomNganh",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "FeaturizeText",
+      "e2": "FeaturizeText",
+      "e3": "Concatenate",
+      "e4": "MapValueToKey",
+      "e5": "FastTreeOva",
+      "e6": "FastForestOva",
+      "e7": "LightGbmMulti",
+      "e8": "LbfgsLogisticRegressionOva",
+      "e9": "LbfgsMaximumEntropyMulti",
+      "e10": "SdcaMaximumEntropyMulti",
+      "e11": "SdcaLogisticRegressionOva",
+      "e12": "MapKeyToValue"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * e4 * (e5 + e6 + e7 + e8 + e9 + e10 + e11) * e12",
+    "MetricName": "MacroAccuracy",
+    "ModelFilePath": "C:\\Users\\Duy\\Documents\\MyProject\\ml_dotnet_NLCS\\TestML_NET\\MLModel1.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 100,
+    "LabelColumn": "NhomNganh",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
