@@ -1,6 +1,5 @@
 <Solution>
-  <Folder Name="/Solution Items/">
-    <File Path="SentimentData.cs" />
-  </Folder>
+  <Folder Name="/Solution Items/" />
+  <Project Path="../MLModel1_ConsoleApp1/MLModel1_ConsoleApp1.csproj" />
   <Project Path="TestML_NET.csproj" />
 </Solution>

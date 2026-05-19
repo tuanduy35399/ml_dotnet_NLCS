@@ -10,7 +10,7 @@ using Microsoft.ML.Data;
 using Microsoft.ML.Trainers;
 using Microsoft.ML.Trainers.FastTree;
 
-namespace TestML_NET
+namespace MLModel1_ConsoleApp1
 {
     public partial class MLModel1
     {
