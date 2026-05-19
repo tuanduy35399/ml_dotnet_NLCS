@@ -59,10 +59,10 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.69923089523089232,
-        "RuntimeInSeconds": 1.033,
+        "Score": 0.96999379254321494,
+        "RuntimeInSeconds": 1.515,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e6 * e7",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e9 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -74,6 +74,10 @@
           "e1": {
             "InputColumnName": "MaToHop",
             "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
           },
           "e2": {
             "InputColumnName": "NhomTinhCach",
@@ -92,15 +96,11 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e6": {
-            "L1Regularization": 0.2046735,
-            "L2Regularization": 0.101906724,
+          "e9": {
+            "L1Regularization": 0.036871687,
+            "L2Regularization": 0.03125,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
           }
         }
       },
@@ -108,10 +108,10 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.69792595661945211,
-        "RuntimeInSeconds": 1.572,
+        "Score": 0.96688023942966184,
+        "RuntimeInSeconds": 1.364,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e6 * e7",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e9 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -123,6 +123,10 @@
           "e1": {
             "InputColumnName": "MaToHop",
             "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
           },
           "e2": {
             "InputColumnName": "NhomTinhCach",
@@ -141,15 +145,11 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e6": {
-            "L1Regularization": 0.10888559,
-            "L2Regularization": 0.37383986,
+          "e9": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.055034064,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
           }
         }
       },
@@ -157,10 +157,10 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.69687036196779839,
-        "RuntimeInSeconds": 1.126,
+        "Score": 0.96457421212363437,
+        "RuntimeInSeconds": 1.693,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e6 * e7",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e9 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -172,6 +172,10 @@
           "e1": {
             "InputColumnName": "MaToHop",
             "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
           },
           "e2": {
             "InputColumnName": "NhomTinhCach",
@@ -190,15 +194,11 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e6": {
-            "L1Regularization": 0.10851974,
-            "L2Regularization": 0.37258956,
+          "e9": {
+            "L1Regularization": 0.2087526,
+            "L2Regularization": 0.062701665,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
           }
         }
       },
@@ -206,10 +206,10 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.69687036196779839,
-        "RuntimeInSeconds": 1.188,
+        "Score": 0.94405195660137886,
+        "RuntimeInSeconds": 1.184,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e6 * e7",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e9 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -221,6 +221,10 @@
           "e1": {
             "InputColumnName": "MaToHop",
             "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
           },
           "e2": {
             "InputColumnName": "NhomTinhCach",
@@ -239,26 +243,22 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e6": {
-            "L1Regularization": 0.0866736,
-            "L2Regularization": 0.52807665,
+          "e9": {
+            "L1Regularization": 0.035227023,
+            "L2Regularization": 0.8126087,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
           }
         }
       },
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.6965854204049664,
-        "RuntimeInSeconds": 1.838,
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.94237657912876993,
+        "RuntimeInSeconds": 7.05,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e6 * e7",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e7 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -270,6 +270,10 @@
           "e1": {
             "InputColumnName": "MaToHop",
             "OutputColumnName": "MaToHop"
+          },
+          "e12": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
           },
           "e2": {
             "InputColumnName": "NhomTinhCach",
@@ -288,15 +292,18 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e6": {
-            "L1Regularization": 0.08626912,
-            "L2Regularization": 0.528509,
+          "e7": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.22516558542747508,
+            "NumberOfTrees": 541,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 209,
+            "FeatureFraction": 0.963703192889798,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.46515908291719288,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
           }
         }
       }
@@ -307,11 +314,16 @@
       "e2": "FeaturizeText",
       "e3": "Concatenate",
       "e4": "MapValueToKey",
-      "e5": "LbfgsLogisticRegressionOva",
-      "e6": "LbfgsMaximumEntropyMulti",
-      "e7": "MapKeyToValue"
+      "e5": "FastTreeOva",
+      "e6": "FastForestOva",
+      "e7": "LightGbmMulti",
+      "e8": "LbfgsLogisticRegressionOva",
+      "e9": "LbfgsMaximumEntropyMulti",
+      "e10": "SdcaMaximumEntropyMulti",
+      "e11": "SdcaLogisticRegressionOva",
+      "e12": "MapKeyToValue"
     },
-    "Schema": "e0 * e1 * e2 * e3 * e4 * (e5 + e6) * e7",
+    "Schema": "e0 * e1 * e2 * e3 * e4 * (e5 + e6 + e7 + e8 + e9 + e10 + e11) * e12",
     "MetricName": "MacroAccuracy",
     "ModelFilePath": "C:\\Users\\Duy\\Documents\\MyProject\\ml_dotnet_NLCS\\TestML_NET\\MLModel1.mlnet"
   },
@@ -320,14 +332,9 @@
   "TrainingOption": {
     "Version": 2,
     "Subsampling": false,
-    "Tuner": "eci-cfo",
     "Type": "ClassificationTrainingOption",
-    "TrainingTime": 600,
-    "OptimizeMetric": "MacroAccuracy",
+    "TrainingTime": 100,
     "LabelColumn": "NhomNganh",
-    "AvailableTrainers": [
-      "LBFGS"
-    ],
     "ValidationOption": {
       "Version": 0,
       "Type": "CrossValidationValidationOption",

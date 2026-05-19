@@ -94,7 +94,7 @@ namespace TestML_NET
                                     .Append(mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"NhomTinhCach",outputColumnName:@"NhomTinhCach"))      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"DiemToHop",@"MaToHop",@"NhomTinhCach"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"NhomNganh",inputColumnName:@"NhomNganh",addKeyValueAnnotationsAsText:false))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.LbfgsMaximumEntropy(new LbfgsMaximumEntropyMulticlassTrainer.Options(){L1Regularization=0.2046735F,L2Regularization=0.101906724F,LabelColumnName=@"NhomNganh",FeatureColumnName=@"Features"}))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.LbfgsMaximumEntropy(new LbfgsMaximumEntropyMulticlassTrainer.Options(){L1Regularization=0.036871687F,L2Regularization=0.03125F,LabelColumnName=@"NhomNganh",FeatureColumnName=@"Features"}))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;
