@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using Microsoft.ML.Trainers;
-using Microsoft.ML.Trainers.FastTree;
+using Microsoft.ML.Trainers.LightGbm;
 
 namespace TestML_NET
 {
@@ -95,7 +95,7 @@ namespace TestML_NET
                                     .Append(mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"NhomTinhCach",outputColumnName:@"NhomTinhCach"))      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"DiemToHop",@"MaToHop",@"NhomTinhCach"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"NhomNganh",inputColumnName:@"NhomNganh",addKeyValueAnnotationsAsText:false))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.FastTree(new FastTreeBinaryTrainer.Options(){NumberOfLeaves=10,MinimumExampleCountPerLeaf=9,NumberOfTrees=45,MaximumBinCountPerFeature=147,FeatureFraction=0.8258979331732712,LearningRate=0.40480239918911165,LabelColumnName=@"NhomNganh",FeatureColumnName=@"Features",DiskTranspose=false}),labelColumnName: @"NhomNganh"))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.LightGbm(new LightGbmMulticlassTrainer.Options(){NumberOfLeaves=436,NumberOfIterations=4,MinimumExampleCountPerLeaf=20,LearningRate=0.9999997766729865,LabelColumnName=@"NhomNganh",FeatureColumnName=@"Features",Booster=new GradientBooster.Options(){SubsampleFraction=0.9999997766729865,FeatureFraction=0.99999999,L1Regularization=2.303931734633912E-10,L2Regularization=0.9739864320690114},MaximumBinCountPerFeature=183}))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;

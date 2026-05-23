@@ -58,11 +58,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "FastTreeOva",
-        "Score": 0.974275746076773,
-        "RuntimeInSeconds": 17.83,
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.87812755675960885,
+        "RuntimeInSeconds": 0.426,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5 * e12",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e7 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -96,27 +96,29 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e5": {
-            "NumberOfLeaves": 10,
-            "MinimumExampleCountPerLeaf": 9,
-            "NumberOfTrees": 45,
-            "MaximumBinCountPerFeature": 147,
-            "FeatureFraction": 0.8258979331732712,
-            "LearningRate": 0.40480239918911165,
+          "e7": {
+            "NumberOfLeaves": 436,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.99999977667298645,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 183,
+            "FeatureFraction": 0.99999999,
+            "L1Regularization": 2.3039317346339119E-10,
+            "L2Regularization": 0.97398643206901137,
             "LabelColumnName": "NhomNganh",
-            "FeatureColumnName": "Features",
-            "DiskTranspose": false
+            "FeatureColumnName": "Features"
           }
         }
       },
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "FastTreeOva",
-        "Score": 0.97084926298072871,
-        "RuntimeInSeconds": 10.411,
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.87137474334890064,
+        "RuntimeInSeconds": 0.505,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5 * e12",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e7 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -150,27 +152,29 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e5": {
+          "e7": {
             "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 13,
-            "NumberOfTrees": 24,
-            "MaximumBinCountPerFeature": 160,
-            "FeatureFraction": 0.84622442328828262,
-            "LearningRate": 0.73803741604628281,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 254,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
             "LabelColumnName": "NhomNganh",
-            "FeatureColumnName": "Features",
-            "DiskTranspose": false
+            "FeatureColumnName": "Features"
           }
         }
       },
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.96766848627054025,
-        "RuntimeInSeconds": 2.442,
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.85850591719060088,
+        "RuntimeInSeconds": 0.376,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e9 * e12",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e7 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -204,9 +208,16 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e9": {
-            "L1Regularization": 0.16406187,
-            "L2Regularization": 0.033824977,
+          "e7": {
+            "NumberOfLeaves": 1442,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.99999977667298645,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 190,
+            "FeatureFraction": 0.99999999,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.99999977667298645,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
           }
@@ -216,8 +227,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.96742968997911238,
-        "RuntimeInSeconds": 1.651,
+        "Score": 0.8014413262685558,
+        "RuntimeInSeconds": 1.818,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e9 * e12",
           "e0": {
@@ -254,8 +265,8 @@
             "AddKeyValueAnnotationsAsText": false
           },
           "e9": {
-            "L1Regularization": 0.03125,
-            "L2Regularization": 0.118621565,
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
           }
@@ -264,11 +275,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.96742968997911238,
-        "RuntimeInSeconds": 2.178,
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.79361924703200282,
+        "RuntimeInSeconds": 1.353,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e9 * e12",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e8 * e12",
           "e0": {
             "OutputColumnNames": [
               "DiemToHop"
@@ -302,9 +313,9 @@
             "InputColumnName": "NhomNganh",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e9": {
-            "L1Regularization": 0.03125,
-            "L2Regularization": 0.03125,
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
             "LabelColumnName": "NhomNganh",
             "FeatureColumnName": "Features"
           }
@@ -337,7 +348,7 @@
     "Subsampling": false,
     "Tuner": "eci-cfo",
     "Type": "ClassificationTrainingOption",
-    "TrainingTime": 300,
+    "TrainingTime": 100,
     "OptimizeMetric": "MacroAccuracy",
     "LabelColumn": "NhomNganh",
     "AvailableTrainers": [
